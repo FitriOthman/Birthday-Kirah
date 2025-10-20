@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff7f8"/>
+      <stop offset="60%" stop-color="#fff1f2"/>
+      <stop offset="100%" stop-color="#fffdfd"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <!-- soft glow -->
+  <g opacity="0.18" filter="url(#blur)">
+    <circle cx="300" cy="220" r="260" fill="#ffdfe6"/>
+    <circle cx="1620" cy="300" r="220" fill="#ffeedd"/>
+    <circle cx="1000" cy="760" r="300" fill="#fff0f3"/>
+  </g>
+  <!-- floral elements -->
+  <g opacity="0.95">
+    <g transform="translate(140,120)">
+      <circle cx="0" cy="0" r="28" fill="#ffdee6"/>
+      <circle cx="40" cy="-10" r="20" fill="#ffd0da"/>
+      <circle cx="-34" cy="18" r="18" fill="#ffe6ef"/>
+    </g>
+    <g transform="translate(1800,240) scale(1.2)">
+      <circle cx="0" cy="0" r="30" fill="#ffdfe6"/>
+      <circle cx="-40" cy="10" r="18" fill="#fff0f5"/>
+      <circle cx="-10" cy="-36" r="20" fill="#ffe6ee"/>
+    </g>
+    <g transform="translate(400,900) scale(1.1)">
+      <circle cx="0" cy="0" r="34" fill="#fff0f4"/>
+      <circle cx="46" cy="-12" r="22" fill="#ffdfe8"/>
+      <circle cx="-38" cy="10" r="18" fill="#fff6f8"/>
+    </g>
+  </g>
+  <!-- delicate petals floating -->
+  <g opacity="0.55">
+    <ellipse cx="600" cy="220" rx="14" ry="6" fill="#ffdfe6" transform="rotate(-30 600 220)"/>
+    <ellipse cx="720" cy="160" rx="18" ry="8" fill="#fff0f4" transform="rotate(-10 720 160)"/>
+    <ellipse cx="1300" cy="260" rx="16" ry="7" fill="#ffe8ec" transform="rotate(20 1300 260)"/>
+    <ellipse cx="1500" cy="820" rx="24" ry="9" fill="#fff0f3" transform="rotate(10 1500 820)"/>
+  </g>
+</svg>
