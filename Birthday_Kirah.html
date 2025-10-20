@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Bibiy 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(180deg, #ffcede, #ffcede);
+      overflow-x: hidden;
+      color: #a83256;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 80px 20px;
+      position: relative;
+      overflow: hidden;
+      animation: glow 5s infinite alternate;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #d6336c;
+      text-shadow: 0 0 10px #ffb6c1;
+      animation: glow 5s infinite alternate;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #b24c63;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+      animation: glow 5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffb6c1; }
+      to { text-shadow: 0 0 20px #ffcede, 0 0 30px #ffb6c1; }
+    }
+
+    /* Floating Hearts */
+    .heart, .balloon, .confetti {
+      position: fixed;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      background: rgb(229, 55, 84);
+      opacity: 0.7;
+      border-radius: 50%;
+      animation: floatUp 10s linear infinite;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(100vh) scale(0.5); opacity: 1; }
+      to { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+
+    /* Memory Section */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #c2185b;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-out;
+    }
+
+    .visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .grid img, .grid video {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.6);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .grid img:hover, .grid video:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 150, 180, 0.8);
+    }
+
+    /* Back to top button */
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #fe5eb0;
+      color: #d6336c;
+      border: none;
+      border-radius: 50%;
+      font-size: 24px;
+      padding: 10px 15px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.8);
+      transition: background-color 0.7s, transform 0.7s;
+    }
+
+    #topBtn:hover {
+      background-color: #fe5eb0;
+      transform: scale(1.1);
+    }
+
+    audio {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="c:\Users\fitri\Downloads\Kisah Antara Kita - One Avenue Band (Lirik).mp3" type="audio/mp3"/>
+  </audio>
+
+  <!-- Floating Hearts + Balloons + Confetti -->
+  <script>
+    const shapes = ["heart", "balloon", "confetti"];
+    for (let i = 0; i < 70; i++) {
+      const shape = document.createElement("div");
+      const type = shapes[Math.floor(Math.random() * shapes.length)];
+      shape.classList.add(type);
+      shape.style.left = Math.random() * 100 + "vw";
+      shape.style.animationDuration = 5 + Math.random() * 10 + "s";
+      shape.style.background = type === "heart" ? "#ff80ab" : 
+                               type === "balloon" ? "#ffc1cc" : "#ffb6c1";
+      document.body.appendChild(shape);
+    }
+  </script>
+
+  <!-- Greeting Section -->
+  <header>
+    <h1>Happy Birthday My Dear Bibiy 💖</h1>
+    <p>
+      Happy birthday my love, <b>Nurul Shakirah Binti Zainuddin</b> 💕  
+      Thank you for bringing happiness into my life for a year since we’ve been together.  
+      I hope you’ll always be happy with me. I’m sorry if I’ve ever made you sad or annoyed.  
+      I’m always happy when I’m with you, and I’ve never hated you even once.  
+      I’m grateful to have you by my side, and I promise I’ll do my best to be the best for you. 💞
+    </p>
+  </header>
+
+  <!-- Memories Section -->
+  <section id="first-date">
+    <header>
+    <h2>💞 My Bibiyy</h2>
+    <p>
+        She's cute, pretty and beutiful in my eyes. She strong, and always takecare about me.
+        im really loving the version of her.
+        i hope i can give her hapiness and a good future and the best version on me.
+    </p>
+</header>
+
+    <div class="grid">
+      <!-- Replace placeholders with your photos/videos -->
+      <img src="c:\Users\fitri\Downloads\kirah1.jpg" alt="Memory">
+      <img src="c:\Users\fitri\Downloads\kirah8.jpg" alt="Memory">
+      <img src="c:\Users\fitri\Downloads\kirah13.jpg" alt="Memory">
+      <img src="c:\Users\fitri\Downloads\kirah14.jpg" alt="Memory">
+      <img src="c:\Users\fitri\Downloads\kirah11.jpg" alt="Memory">
+      <img src="c:\Users\fitri\Downloads\kirah9.jpg" alt="Memory">
+      <img src="c:\Users\fitri\Downloads\kirah23.jpg" alt="Memory">
+      <video src="c:\Users\fitri\Downloads\kirah12.mp4" controls></video>
+      <video src="c:\Users\fitri\Downloads\kirah16.mp4" controls></video>
+      <video src="c:\Users\fitri\Downloads\kirah27.mp4" controls></video>
+      <video src="c:\Users\fitri\Downloads\kirah4.mp4" controls></video>
+      <!-- ... continue up to 23 images and 7 videos -->
+    </div>
+  </section>
+
+  <section id="memories">
+    <h2>🌸 Memories Together We Spend</h2>
+    <header>
+    <p>
+        I love you so much. I love it when we go out together, spend time together,
+        and create memories together. I hope our relationship lasts until the end of our lives,
+        and I also want to thank you for being in my life. I am grateful that you are in my life and accept me as I am.
+        I will do my best for you, my love. I will make you happy, blissful, and comfortable with me. I love you, Kirah.
+        I hope our relationship will last forever. 
+    </p>
+</header>
+    <div class="grid">
+      <!-- Replace placeholders with your photos/videos -->
+      <img src="c:\Users\fitri\Downloads\kirah24.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirah25.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirah21.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirah22.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirah20.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru3.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru6.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru8.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru7.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru10.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru14.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru12.jpg" alt="Memory 3">
+      <img src="c:\Users\fitri\Downloads\kirahbaru13.jpg" alt="Memory 3">
+      <video src="c:\Users\fitri\Downloads\kirahbaru1.mp4" controls></video>
+      <video src="c:\Users\fitri\Downloads\kirahbaru9.mp4" controls></video>
+      <video src="c:\Users\fitri\Downloads\kirahbaru5.mp4" controls></video>
+      <!-- Add all other memories here -->
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆️</button>
+
+  <!-- Fade-in Animation Script -->
+  <script>
+    const sections = document.querySelectorAll("section h2");
+    window.addEventListener("scroll", () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(h2 => {
+        const h2Top = h2.getBoundingClientRect().top;
+        if (h2Top < triggerBottom) {
+          h2.classList.add("visible");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
